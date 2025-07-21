@@ -1,53 +1,49 @@
 # 🧠 Cybersecurity & Python Utilities
 
-A curated collection of Python-based tools for cybersecurity, encryption, and system utilities. Built for educational purposes, ethical hacking practice, and hands-on learning.
+A curated collection of Python-based tools for cybersecurity, encryption, and system utilities. Built for **educational purposes**, ethical hacking practice, and hands-on learning.
 
 ---
 
 ## 🛡️ Security & Hacking Tools
 
 ### 🔐 Hash_Cracker.py
-- Cracks hashes (like MD5, SHA-1, etc.) using a wordlist or brute-force with customizable character sets and lengths.
-- Supports multithreading and progress tracking via `tqdm`.
+- Cracks hashes (MD5, SHA1, SHA256, etc.) using a wordlist or brute-force.
+- Supports multiple algorithms and multithreading with progress tracking.
 
 ### 🌐 Network_scaner.py
-- Scans an entire network using ARP requests and lists connected devices with IP, MAC address, and hostname.
-- Useful for LAN monitoring and auditing.
+- Scans a network using ARP to list connected devices (IP, MAC, Hostname).
+- Useful for network monitoring and discovery.
 
 ### 🚪 Port_Scanner.py / port_scanner.py
-- Scans a target host for open TCP ports.
-- Fetches service banners and displays results with color-coded formatting.
-- Multithreaded for fast performance.
+- Scans open TCP ports on a target host.
+- Multithreaded with banner grabbing and formatted terminal output.
 
 ### 🌍 dns_enum.py
-- Enumerates subdomains of a target domain using a wordlist.
-- Helps in reconnaissance during web application testing.
+- Enumerates subdomains using a predefined wordlist.
+- Helps in information gathering during penetration testing.
 
 ### 🕵️‍♂️ info_stealer.py
-- Extracts saved Chrome passwords (locally), clipboard data, and system info (like IP, MAC, hostname).
-- Demonstrates the importance of device-level security and encryption.
-- ⚠️ **Educational use only** – do not use unethically.
+- Extracts saved Chrome passwords, clipboard content, and system info (IP, MAC, OS, etc.).
+- ⚠️ **For local use and educational purposes only.**
 
 ---
 
-## 🧠 Cryptography
+## 🔐 Cryptography Tools
 
 ### 🏛️ caesar_cypher.py / caeser cypher.py
-- Simple Caesar cipher encryption and decryption tool.
-- Shifts letters by a fixed number for encoding messages.
-- Great for learning the basics of classical encryption.
+- Classic Caesar cipher implementation for encryption/decryption.
+- Great for beginners exploring simple encryption.
 
-### 🔐 password strength
-- Checks the strength of a password.
-- May include checks for length, complexity, and use of common patterns.
+### 🧠 password strength
+- Checks the strength of passwords based on length, complexity, and pattern detection.
 
 ---
 
 ## 📄 File & PDF Utilities
 
 ### 🔐 pdf_protection.py
-- Creates a PDF file and encrypts it with a password.
-- Uses `reportlab` and `PyPDF2`.
+- Creates and encrypts a PDF file with a password.
+- Good for testing document-level security.
 
 ---
 
@@ -55,20 +51,18 @@ A curated collection of Python-based tools for cybersecurity, encryption, and sy
 
 ### 📷 qr_code.py
 - Generates QR codes from text or URLs.
-- Useful for quick info sharing or testing QR functionality.
+- Useful for sharing info or linking apps/webpages.
 
 ---
 
-## ✅ Requirements
+## ✅ Dependencies
 
-Install the dependencies using:
+Make sure you have Python 3.x installed. Then, install all required libraries using:
 
 ```bash
 pip install -r requirements.txt
-
----
-
-## Dependencies may include:
+```
+## Dependencies may include 
 
 - scapy
 - PyPDF2
@@ -78,11 +72,13 @@ pip install -r requirements.txt
 - pyperclip
 - tqdm
 - termcolor
-- requests
-- qrcode
+-requests
+-qrcode
 
----
 
-##📚 License
+## 📚 License
+
 This repository is for learning and ethical testing only. Do not use any tool here for unauthorized access or activity.
+
+
 
